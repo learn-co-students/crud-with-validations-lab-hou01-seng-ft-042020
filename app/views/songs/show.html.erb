@@ -1,0 +1,12 @@
+<h1>Songs#show</h1>
+<p>Find me in app/views/songs/show.html.erb</p>
+
+    <%= @song.title%> <br>
+    <%= @song.released%> <br>
+    <%= @song.release_year%> <br>
+    <%= @song.artist_name%> <br>
+    <%= @song.genre%> <br>
+
+<%=form_for @song, method: :delete do |f|%>
+    <%=f.submit "Delete Song"%>
+<% end%>
